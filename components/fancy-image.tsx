@@ -8,7 +8,7 @@ interface FancyImageProps {
 
 export const FancyImage: FC<FancyImageProps> = ({ src, alt }) => {
   return (
-    <div className="my-2 rounded-md md:rounded-lg overflow-hidden relative w-full h-max">
+    <div className="rounded-md md:rounded-lg overflow-hidden relative w-full h-max">
       <Image
         src={src}
         alt={alt ?? ""}
