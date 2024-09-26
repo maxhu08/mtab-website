@@ -4,8 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  transition-duration: 250ms;
 }
 
 @layer utilities {
@@ -81,4 +81,21 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2008px;
+  background: #10b981;
+}
+
+::selection {
+  background-color: #ffffff20;
 }
