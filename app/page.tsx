@@ -18,7 +18,7 @@ const Page = () => {
                 href="https://chromewebstore.google.com/detail/mtab/fdaphilojaklgkoocegabckfanjoacjg"
                 target="_blank"
                 className="cursor-pointer">
-                <div className="w-[6rem] md:w-[10rem] lg:w-[14rem]">
+                <div className="w-[6rem] md:w-[10rem]">
                   <FancyImage src="/assets/download-chrome.svg" />
                 </div>
               </a>
@@ -28,7 +28,7 @@ const Page = () => {
                 href="https://addons.mozilla.org/en-US/firefox/addon/mtab"
                 target="_blank"
                 className="cursor-pointer">
-                <div className="w-[6rem] md:w-[10rem] lg:w-[14rem]">
+                <div className="w-[6rem] md:w-[10rem]">
                   <FancyImage src="/assets/download-firefox.svg" />
                 </div>
               </a>
@@ -38,6 +38,10 @@ const Page = () => {
         <Animate delay={300} className="grid place-items-center">
           <ShowcaseCarousel />
         </Animate>
+      </div>
+      {/* <!-- <3 --> */}
+      <div className="px-2 py-4">
+        <p className="text-base text-white text-center">Made with ❤️ by Max Hu et al.</p>
       </div>
     </div>
   );

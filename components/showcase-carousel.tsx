@@ -19,7 +19,7 @@ export const ShowcaseCarousel: FC = () => {
           delay: 5000
         })
       ]}
-      className="w-[80vw]">
+      className="w-[95vw] md:w-[80vw] lg:w-[75vw]">
       <CarouselContent>
         <CarouselItem>
           <div className="border-sky-500 border-2 rounded-lg">
