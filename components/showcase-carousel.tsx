@@ -3,13 +3,7 @@
 import Autoplay from "embla-carousel-autoplay";
 import { FC } from "react";
 import { FancyImage } from "~/components/fancy-image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious
-} from "~/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "~/components/ui/carousel";
 
 export const ShowcaseCarousel: FC = () => {
   return (
