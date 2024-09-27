@@ -1,5 +1,6 @@
 import { Animate } from "~/components/animate";
 import { FancyImage } from "~/components/fancy-image";
+import { ShowcaseCarousel } from "~/components/showcase-carousel";
 
 const Page = () => {
   return (
@@ -35,9 +36,7 @@ const Page = () => {
           </div>
         </div>
         <Animate delay={300} className="grid place-items-center">
-          <div className="w-[95%] lg:w-[80%] border-sky-500 border-2 rounded-lg">
-            <FancyImage src="/assets/showcase.png" />
-          </div>
+          <ShowcaseCarousel />
         </Animate>
       </div>
     </div>

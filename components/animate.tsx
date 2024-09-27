@@ -25,7 +25,7 @@ export const Animate: FC<AnimateProps> = ({ children, delay, className }) => {
 
       const cleanupTimer = setTimeout(() => {
         setClasses("");
-      }, animationDuration);
+      }, animationDuration * 0.8);
 
       return () => clearTimeout(cleanupTimer);
     }, delay);
