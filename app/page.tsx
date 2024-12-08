@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Animate } from "~/components/animate";
 import { FancyImage } from "~/components/fancy-image";
 import { ShowcaseCarousel } from "~/components/showcase-carousel";
@@ -42,6 +43,16 @@ const Page = () => {
       {/* <!-- <3 --> */}
       <div className="px-2 py-4">
         <p className="text-base text-white text-center">Made with ❤️ by Max Hu et al.</p>
+        <p className="text-base text-white text-center">
+          Join the{" "}
+          <Link
+            href="https://maxhu.dev/redirect/discord/mtab"
+            target="_blank"
+            className="cursor-pointer text-blue-500 transition hover:text-blue-600">
+            Discord
+          </Link>{" "}
+          🚀
+        </p>
       </div>
     </div>
   );
