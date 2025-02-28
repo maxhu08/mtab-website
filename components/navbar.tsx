@@ -5,10 +5,10 @@ import { Separator } from "~/components/separator";
 
 export const Navbar: FC = () => {
   return (
-    <nav className="fixed z-[3] w-full top-0 ease-in-out bg-neutral-900">
-      <div className="py-2 px-2 md:px-4 grid grid-cols-[1fr_auto_1fr] w-full">
-        <div className="w-max grid grid-cols-[max-content_auto] place-items-center gap-2">
-          <div className="w-6 h-6">
+    <nav className="fixed top-0 z-[3] w-full bg-neutral-900 ease-in-out">
+      <div className="grid w-full grid-cols-[1fr_auto_1fr] px-2 py-2 md:px-4">
+        <div className="grid w-max grid-cols-[max-content_auto] place-items-center gap-2">
+          <div className="h-6 w-6">
             <FancyImage src="/assets/icon.png" />
           </div>
           <span className="text-emerald-500">mtab</span>
@@ -17,9 +17,10 @@ export const Navbar: FC = () => {
         <a
           href="https://github.com/maxhu08/mtab"
           target="_blank"
-          className="ml-auto text-blue-500 hover:text-blue-600 transition cursor-pointer">
-          <div className="w-max grid grid-cols-[max-content_auto] place-items-center gap-2">
-            <Github className="w-4 h-4" />
+          className="ml-auto cursor-pointer text-blue-500 transition hover:text-blue-600"
+        >
+          <div className="grid w-max grid-cols-[max-content_auto] place-items-center gap-2">
+            <Github className="h-4 w-4" />
             <span>github</span>
           </div>
         </a>

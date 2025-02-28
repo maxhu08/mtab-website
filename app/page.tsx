@@ -9,16 +9,17 @@ const Page = () => {
       <div className="grid grid-flow-row gap-4 py-20">
         <div className="grid place-items-center py-4 md:py-10 lg:py-20">
           <Animate delay={0}>
-            <h1 className="text-white text-2xl md:text-4xl lg:text-6xl text-center">
+            <h1 className="text-center text-2xl text-white md:text-4xl lg:text-6xl">
               the <span className="text-emerald-500">modern</span> new tab extension
             </h1>
           </Animate>
-          <div className="grid grid-cols-2 gap-2 md:gap-4 pt-4 md:pt-10">
+          <div className="grid grid-cols-2 gap-2 pt-4 md:gap-4 md:pt-10">
             <Animate delay={100}>
               <a
                 href="https://chromewebstore.google.com/detail/mtab/fdaphilojaklgkoocegabckfanjoacjg"
                 target="_blank"
-                className="cursor-pointer">
+                className="cursor-pointer"
+              >
                 <div className="w-[6rem] md:w-[10rem]">
                   <FancyImage src="/assets/download-chrome.svg" />
                 </div>
@@ -28,7 +29,8 @@ const Page = () => {
               <a
                 href="https://addons.mozilla.org/en-US/firefox/addon/mtab"
                 target="_blank"
-                className="cursor-pointer">
+                className="cursor-pointer"
+              >
                 <div className="w-[6rem] md:w-[10rem]">
                   <FancyImage src="/assets/download-firefox.svg" />
                 </div>
@@ -42,13 +44,14 @@ const Page = () => {
       </div>
       {/* <!-- <3 --> */}
       <div className="px-2 py-4">
-        <p className="text-base text-white text-center">Made with ❤️ by Max Hu et al.</p>
-        <p className="text-base text-white text-center">
+        <p className="text-center text-base text-white">Made with ❤️ by Max Hu et al.</p>
+        <p className="text-center text-base text-white">
           Join the{" "}
           <Link
             href="https://maxhu.dev/redirect/discord/mtab"
             target="_blank"
-            className="cursor-pointer text-blue-500 transition hover:text-blue-600">
+            className="cursor-pointer text-blue-500 transition hover:text-blue-600"
+          >
             Discord
           </Link>{" "}
           🚀
