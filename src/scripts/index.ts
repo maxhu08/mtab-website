@@ -84,7 +84,7 @@ window.addEventListener("load", () => {
     '🔒 <span class="text-lime-500">privacy</span> focused',
     '🎨 customized to <span class="text-pink-500">you</span>',
     '⚙️ <span class="text-yellow-500">endless</span> customizations',
-    '⚙️ <span class="text-teal-300">qol</span> features'
+    '🚀 <span class="text-teal-300">qol</span> features'
   ];
 
   let i = 0;
