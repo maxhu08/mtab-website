@@ -1,3 +1,42 @@
+const mobileMenuButton = document.getElementById("mobile-menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
+const hamburgerIcon = document.getElementById("hamburger-icon");
+const xIcon = document.getElementById("x-icon");
+
+let isMenuOpen = false;
+
+mobileMenuButton?.addEventListener("click", () => {
+  isMenuOpen = !isMenuOpen;
+
+  if (isMenuOpen) {
+    mobileMenu?.classList.remove("hidden");
+    hamburgerIcon?.classList.add("hidden");
+    xIcon?.classList.remove("hidden");
+  } else {
+    mobileMenu?.classList.add("hidden");
+    hamburgerIcon?.classList.remove("hidden");
+    xIcon?.classList.add("hidden");
+  }
+});
+
+window.addEventListener("load", () => {
+  const releaseBadge = document.getElementById("release-badge");
+  const rotatingText = document.getElementById("rotating-text");
+  const preview = document.getElementById("preview");
+
+  setTimeout(() => {
+    releaseBadge?.classList.remove("opacity-0", "translate-y-2");
+  }, 100);
+
+  setTimeout(() => {
+    rotatingText?.classList.remove("opacity-0", "translate-y-4");
+  }, 300);
+
+  setTimeout(() => {
+    preview?.classList.remove("opacity-0", "translate-y-4");
+  }, 500);
+});
+
 (async () => {
   const owner = "maxhu08";
   const repo = "mtab";

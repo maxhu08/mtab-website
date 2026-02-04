@@ -25,11 +25,34 @@
               </div>
             </div>
           </a>
-          <div class="grid grid-flow-col gap-4">
+          <!-- desktop menu -->
+          <div class="hidden md:grid grid-flow-col gap-4">
             <a href="https://github.com/maxhu08/mtab" target="_blank"
               class="text-neutral-400 hover:text-white transition-colors duration-200">github</a>
             <a href="https://maxhu.dev/redirect/discord/mtab" target="_blank"
               class="text-neutral-400 hover:text-white transition-colors duration-200">discord</a>
+          </div>
+          <!-- mobile menu button -->
+          <button id="mobile-menu-button"
+            class="md:hidden relative w-6 h-6 text-neutral-400 hover:text-white transition-colors duration-200"
+            aria-label="Toggle menu">
+            <svg id="hamburger-icon" class="absolute inset-0 w-6 h-6" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="x-icon" class="absolute inset-0 w-6 h-6 hidden" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <div class="flex flex-col gap-3">
+            <a href="https://github.com/maxhu08/mtab" target="_blank"
+              class="text-neutral-400 hover:text-white transition-colors duration-200 py-2">github</a>
+            <a href="https://maxhu.dev/redirect/discord/mtab" target="_blank"
+              class="text-neutral-400 hover:text-white transition-colors duration-200 py-2">discord</a>
           </div>
         </div>
       </div>
@@ -80,7 +103,7 @@
           </div>
         </div>
       </div>
-      <div id="preview" class="relative z-10 mt-16 mx-auto max-w-6xl px-4
+      <div id="preview" class="relative z-10 mt-16 w-[95vw] max-w-6xl px-4
          opacity-0 translate-y-4 transition-all duration-500 ease-out">
         <div class="bg-emerald-500 p-1 rounded-2xl overflow-hidden">
           <img src="assets/preview/main.png" alt="mtab preview"
