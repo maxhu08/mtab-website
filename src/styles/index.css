@@ -1,0 +1,21 @@
+* {
+  font-family: "JetBrains Mono", monospace !important;
+  transition-duration: 250ms;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2008px;
+  background: #10b981;
+}
+
+::selection {
+  background-color: #ffffff20;
+}
